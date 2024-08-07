@@ -23,12 +23,14 @@ public class MathUtil {
 
   @Export
   public static Object printSource(Object o) {
-
+//    System.out.println("o = " + o);
     return o;
   }
 
   @Export
-  public static int printSource2(InputCla o) {
-    return o.getA()+o.getB();
+  public static int printSource2(Object o) {
+    //    return o.getA()+o.getB();
+//    return o.hashCode();
+    return 1;
   }
 }

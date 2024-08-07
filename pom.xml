@@ -27,12 +27,12 @@
             <artifactId>jwebassembly-api</artifactId>
             <version>master-v0.3-g052038d-86</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>de.inetsoftware</groupId>-->
-<!--            <artifactId>jwebassembly-api</artifactId>-->
-<!--            <version>0.4</version>-->
-<!--            <scope>compile</scope>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>de.inetsoftware</groupId>
+            <artifactId>jwebassembly-api</artifactId>
+            <version>0.4</version>
+            <scope>compile</scope>
+        </dependency>
         <!-- Servlet specification -->
         <dependency>
             <groupId>jakarta.servlet</groupId>
