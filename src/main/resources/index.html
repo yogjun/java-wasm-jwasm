@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="java-wasm-jwasm-1.0-SNAPSHOT.wasm.js"></script>
+</head>
+<body>
+<script>
+    WebAssembly.instantiateStreaming(fetch('java-wasm-jwasm-1.0-SNAPSHOT.wasm'), wasmImports)
+        .then(obj => {
+            aaaa = obj.instance.exports.add(1, 2);
+            console.log(aaaa);
+            var bean = {"a":123, "b":456};
+            console.log(obj.instance.exports.printSource);
+            b = obj.instance.exports.printSource(bean);
+            console.log("--------");
+            console.log(b);
+            console.log(obj.instance.exports.printSource2(bean));
+        })
+        .catch((err) => document.write(err + '<p>Missing <a href="https://github.com/i-net-software/JWebAssembly/wiki/browser">Browser Support</a>'));
+</script>
+</body>
+</html>
